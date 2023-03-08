@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Form</title>
+</head>
+<body>
+
+<form action="" method="get">
+    <label for="firstName">Nome:</label>
+    <input type="text" name="firstName" id="firstName" placeholder="Inserisci il tuo nome" required>
+
+    <label for="secondName">Cognome:</label>
+    <input type="text" name="secondName" id="secondName" placeholder="Inserisci il tuo cognome" required>
+
+    <label for="ck"></label>
+    <input type="checkbox" name="ck" id="ck">
+
+    <label for="whatever"></label>
+    <select name="whatever" id="whatever" required>
+        <option value="one">One</option>
+        <option value="two">Two</option>
+        <option value="three">Three</option>
+    </select>
+
+    <label for="message">Messaggio: </label>
+    <textarea name="message" id="message" cols="10" rows="5" required>
+        Default Content.
+    </textarea>
+
+    <input type="submit">
+</form>
+
+<form action="" method="get" id="mioForm">
+    <label for="tx">Reset Input: </label>
+    <input type="text" name="tx" id="tx" pattern="[a-z,A-Z,0-9]" required>
+    <button type="submit">Submit</button>
+</form>
+
+<div>
+    <button type="reset" form="mioForm">Reset</button>
+</div>
+
+<form>
+    <fieldset>
+        <legend>Choose your favorite monster</legend>
+
+        <input type="radio" name="monster" id="kraken">
+        <label for="kraken">Kraken</label><br>
+
+        <input type="radio" name="monster" id="sasquatch">
+        <label for="sasquatch">Sasquatch</label><br>
+
+        <input type="radio" name="monster" id="mothman">
+        <label for="mothman">Mothman</label>
+    </fieldset>
+</form>
+<hr>
+
+
+</body>
+</html>
